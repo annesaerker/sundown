@@ -2,13 +2,15 @@ export function formNewsletter() {
 
   $('#formSubscription').validator();
 
-  // Get the form.
-  var form = $('#formSubscription');
-
   // Event listener for the subscribe form.
   $('#sendForm').click(function (e) {
     // Stop the browser from submitting the form.
     e.preventDefault();
+
+    var dataEmail = $('#subscribeEmail').val();
+    var dataName = $('#subscribeName').val();
+    // console.log('dataEmail', dataEmail);
+    // console.log('dataName', dataName);
 
     // If form has class disabled, it is not valid
     if ($('#sendForm').hasClass('disabled')) {
@@ -16,9 +18,14 @@ export function formNewsletter() {
     } else {
       // If the form is valid it will submit the form using AJAX.
       $.ajax({
-        type: 'POST',
+        cache: false, // no cache
         url: 'https://api.punkapi.com/v2/beers',
-        data: form,
+        type: 'POST', // request method
+        dataType: 'json', // the data type
+        data: {
+          email: dataEmail,
+          name: dataName
+        },
         error: function (data) {
           console.log("Error: ", data);
           showMessage(data);
@@ -33,8 +40,6 @@ export function formNewsletter() {
 
   // Show message function
   function showMessage(response) {
-    console.log('hello',response);
-
     if (response) {
       $(".form-container").hide();
       $(".message-container").show();
