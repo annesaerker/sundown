@@ -1,0 +1,20 @@
+.form-newsletter
+  .container
+    .row
+      .col-12
+        .form-newsletter__content
+          .form-body.subscription-body
+            form#formSubscription(method="post" data-toggle="validator" novalidate="true" role="form")
+              .form-group
+                label(for="newsletter-name") Name*
+                input(name="newsletter-name" type="text" placeholder="Your name" data-error="*Type your name" required)
+                .help-block.with-errors
+              .form-group
+                label(for="newsletter-email") Email*
+                input(name="newsletter-email" type="email" placeholder="email@email.coms" data-error="*Type your email" required)
+                .help-block.with-errors
+              input#sendForm(name="submit" type="submit" value="Subscribe")
+          .form-body.message-body.form-body__hidden
+            img(src="../assets/img/icon-checkmark.svg" alt="checkmark icon")
+            h3 Thank you for subscribing to our newsletter!
+          

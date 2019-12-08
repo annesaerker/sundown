@@ -1,0 +1,29 @@
+doctype html
+html(lang='da')  
+    block vars  
+    head
+        title #{title} | Sundown test
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+        meta(name="description", content="Some description...")
+        meta(name="keywords", content="")
+
+        include ../partials/meta-some
+        include ../partials/icons
+        link(rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css")
+        link(rel="stylesheet" href="./css/main.css") 
+
+    block head
+    block scripts
+
+    body
+        block content
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js")
+        script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js")
+        script(src="./js/vendor.js")
+        script(src="./js/app.js")
+
+    block body_end
+    

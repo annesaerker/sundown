@@ -1,0 +1,30 @@
+extends ../layouts/home
+block head
+block vars
+	- title='Sundown'
+
+block content
+
+	include ../../modules/header/header.pug
+
+	section.mb--large
+		.container--wide
+			.row
+				.col-md-12
+					include ../../modules/flickity/flickity
+	
+	section.mb--large
+		.container
+			.row
+				.col-md-12
+					include ../../modules/products/products
+
+	section
+		.container--wide
+			.row
+				.col-md-12
+					include ../../modules/form-newsletter/form-newsletter
+			
+	include ../../modules/footer/footer
+
+block body_end

@@ -1,0 +1,95 @@
+{
+  "name": "Cabana-Boiler",
+  "version": "1.0.0",
+  "description": "Cabana-Boiler - Front-end Boilerplate. Gulp 4 + Webpack 4 + Babel + BrowserSync + Sass + ITCSS + pug.js",
+  "main": "index.js",
+  "dependencies": {
+    "@dashboardcode/bsmultiselect": "^0.4.0",
+    "bootstrap": "^4.3.1",
+    "chosen-js": "^1.8.7",
+    "jquery-multiselect": "^1.0.0",
+    "owl.carousel": "^2.3.4",
+    "sweet-scroll": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "del": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^2.0.2",
+    "gulp-jsbeautifier": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^8.0.0",
+    "node-notifier": "^5.4.0",
+    "pug": "^2.0.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.1.0",
+    "stylelint-scss": "^3.5.4",
+    "webpack": "^4.29.6",
+    "webpack-notifier": "^1.7.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp",
+    "watch": "cross-env NODE_ENV=development gulp watch",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "deploy": "cross-env NODE_ENV=production gulp deploy"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaszbujnowicz/frontie-webpack.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp4",
+    "gulpjs",
+    "webpack",
+    "browsersync",
+    "webpack4",
+    "babel",
+    "browsersync",
+    "sass",
+    "twig",
+    "bootstrap",
+    "bootstrap-grid",
+    "frontend",
+    "front-end boilerplate",
+    "front-end development",
+    "front-end starter",
+    "boilerplate",
+    "workflow",
+    "itcss"
+  ],
+  "author": {
+    "name": "Tomasz Bujnowicz",
+    "email": "hi@tomaszbujnowicz.com",
+    "url": "https://www.tomaszbujnowicz.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomaszbujnowicz/frontie-webpack/issues"
+  },
+  "homepage": "https://github.com/tomaszbujnowicz/frontie-webpack#readme"
+}

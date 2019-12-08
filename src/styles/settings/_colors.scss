@@ -1,0 +1,15 @@
+/**
+ * Colors
+ */
+
+$body-color: #222 !default;
+$white: #fff !default;
+$black: #000 !default;
+$dark-grey: #2b2d2f !default;
+$light-grey: #f1f1f1 !default;
+$red: #f00 !default;
+
+$color-primary: #f61a64 !default;
+$color-secondary: #ffd94c !default;
+$color-secondary--light: lighten($color-secondary, 25%);
+$gradient-linear: linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);

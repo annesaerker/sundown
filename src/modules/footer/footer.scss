@@ -1,0 +1,75 @@
+/**
+* Footer
+*/
+
+.footer {
+  padding: 70px 0;
+  background: $gradient-linear;
+
+  & .logo {
+    margin-bottom: 30px;
+    max-width: 200px;
+    height: auto;
+  }
+
+  // Remove global col-margin bottom
+  [class*='col-'] {
+    margin-bottom: 0 !important;
+  }
+
+  &__content {
+    margin-bottom: 60px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
+
+    h2,
+    h3,
+    p {
+      color: $white;
+      line-height: 28px;
+    }
+
+    ul {
+      @include list-unstyled();
+      margin-bottom: 0;
+
+      li {
+        display: flex;
+        align-content: center;
+        margin-bottom: 0;
+        height: 28px;
+        line-height: 28px;
+        transition: $transition-base;
+
+        a {
+          color: $white;
+          position: relative;
+          line-height: 28px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: $color-primary;
+            transition: $transition-base;
+          }
+
+          &:hover,
+          &:visited,
+          &:focus {
+            transition: $transition-base;
+
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

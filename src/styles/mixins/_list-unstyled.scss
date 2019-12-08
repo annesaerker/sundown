@@ -1,0 +1,9 @@
+/**
+ * Remove default list styling
+ * @include list-unstyled
+ */
+
+@mixin list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}

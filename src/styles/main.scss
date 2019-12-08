@@ -1,0 +1,16 @@
+/**
+ * This is where all of the stylesheets are compiled.
+ *
+ * 1. Bootstrap.grid...Bootstrap grid variables and other imports
+ * 2. Settings.........Global configuration and variables.
+ * 3. Mixins...........Mixins.
+ * 4. Generic..........Ground zero styles. (normalizing.css, box-sizing etc...)
+ *
+ *    Modules..........Multi-part components. e.g. Navbar (HTML, CSS and JS).
+ */
+
+@import '_bootstrap.grid.scss';
+@import 'settings/**/*.scss';
+@import 'mixins/**/*.scss';
+@import 'generic/**/*.scss';
+@import '../modules/**/*.scss';

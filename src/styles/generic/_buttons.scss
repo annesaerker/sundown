@@ -1,0 +1,22 @@
+/**
+ * BUttons
+ */
+
+button,
+input[type="submit"] {
+  background: $color-primary;
+  color: $white;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 0;
+
+  &.disabled {
+    background: rgba($color-primary, .5);
+    cursor: auto;
+  }
+}
