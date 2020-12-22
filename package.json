@@ -35,7 +35,7 @@
     "gulp-sass-glob": "^1.0.9",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^8.0.0",
-    "node-notifier": "^5.4.0",
+    "node-notifier": "^8.0.1",
     "pug": "^2.0.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
